@@ -1,0 +1,159 @@
+<html>
+<head>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.css"
+          rel="stylesheet" type="text/css"/>
+</head>
+</head>
+<head>
+<body>
+<div class="header-wrap flex-container">
+    <div class="container flex-container">
+        <div class="logo flex-container">User Service <i class=" flex-container user circle icon"></i></div>
+        <div class="ui secondary  menu">
+            <a class="item " href="index.html">
+                TC Service
+            </a>
+            <a class="item" href="laboratory.html">
+                Laboratory
+            </a>
+            <a class="item" href="management-service.html">
+                Management Service
+            </a>
+            <a class="item active" href="user-end.html">
+                User service
+            </a>
+
+            <div class="right menu">
+                <a class="ui item">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="user-page">
+    <div class="container">
+        <div class="flex-container">
+            <div class="flex-col">
+                <table class="ui table management-user-table">
+                    <tbody>
+                    <tr>
+                        <td>First Name</td>
+                        <td>Dmytro</td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td>Kachurynets</td>
+                    </tr>
+                    <tr>
+                        <td>Test Name</td>
+                        <td>Covid-19</td>
+                    </tr>
+                    <tr>
+                        <td>Laboratory</td>
+                        <td>Test Laboratory</td>
+                    </tr>
+                    <tr>
+                        <td>Registration Date</td>
+                        <td>21/05/2020</td>
+                    </tr>
+                    <tr>
+                        <td>Result Date</td>
+                        <td>21/05/2020</td>
+                    </tr>
+                    <tr>
+                        <td>Social Number</td>
+                        <td>123-45-678</td>
+                    </tr>
+                    <tr>
+                        <td>Probe Id</td>
+                        <td>00000001</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex-col">
+                <img class="qr-code" src="images/test-qr-code.png" alt="">
+            </div>
+        </div>
+        <div class="ui dividing header">
+            Chain of hash Ubirch
+        </div>
+        <div class="ui mini steps">
+            <div class="step hash-chain">
+                <i class="chain icon"></i>
+                <div class="content">
+                    <div class="title">TC Hash</div>
+                    <div class="description"><button class="ui button mini verify-hash-link">Verify hash</button></div>
+                </div>
+            </div>
+            <div class="hash-chain step">
+                <i class="chain icon"></i>
+                <div class="content">
+                    <div class="title">Laboratory Hash </div>
+                    <div class="description"><button class="ui button mini verify-hash-link">Verify hash</button></div>
+                </div>
+            </div>
+            <div class="active step hash-chain">
+                <i class="chain icon"></i>
+                <div class="content">
+                    <div class="title">TR Hash</div>
+                    <div class="description"><button class="ui button mini verify-hash-link">Verify hash</button></div>
+                </div>
+            </div>
+            <div class="ui special popup">
+                <div class="small header">FrASAgRL8xLNXSJxVnMO0Cg9PJyHbwGqL8GatDXROzM=</div>
+                <!--                <div class="ui button">Copy Hash <i class="copy icon"></i></div>-->
+            </div>
+        </div>
+
+        <div class="verify-hash-message hide ui success message">
+            <div class="header">
+                <div class="ubirch-report-message">
+                    <span>Data  has not been corrupted after its creation</span>
+                    <img src="ubirch_verify_right.png" alt="">
+                </div>
+            </div>
+            <div class="ui list">
+                <a class="item">
+                    <i class="clock outline icon"></i>
+                    <div class="content">
+                        <div class="header">timestamp: 2020-05-21T19:49:45.305Z</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+></script>
+<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="qrcode.js"></script>
+<script src="script.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#example1').calendar();
+    });
+</script>
+</body>
+</html>

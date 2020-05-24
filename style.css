@@ -1,0 +1,149 @@
+.flex-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-col {
+    width: 50%;
+}
+
+body {
+    background: #F0F4F5 !important; ;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Header */
+.header-wrap {
+    display: flex;
+    align-items: center;
+    background: #D0D8DA;
+    color: #09425A;
+    height: 70px;
+}
+
+.header-wrap i.icon {
+    margin-left: 5px;
+}
+.header-wrap .logo {
+    font-size: 28px;
+    font-weight: 500;
+    color: #556222;
+}
+
+
+.header-wrap .ui.menu:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*Header End*/
+
+/*TC 1 screen */
+
+.register-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.success-section {
+    padding: 50px 0;
+}
+.register-form {
+    background: #fff;
+    width: 60%;
+    padding: 20px;
+}
+
+.system-data {
+    margin-bottom: 20px;
+}
+
+.tc-qr-code {
+    margin: 20px 0;
+}
+
+.btn-wrap {
+    margin-top: 10px;
+}
+
+.register-ubirch {
+    display: flex;
+    height: 35px;
+
+}
+.register-ubirch img {
+    height: 100%;
+}
+
+#textarea-json {
+    margin-bottom: 20px;
+}
+.hide {
+    display: none !important;
+}
+
+.test-center-page .success-section .table-user{
+    width: 50%;
+}
+
+
+/*Laboratory*/
+
+.laboratory, .management-page {
+    padding: 50px 0;
+}
+
+.laboratory-table {
+    margin: 20px 0;
+}
+
+.ubirch-report-message {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ubirch-report-message  img{
+    height: 100%;
+    margin-left: 10px;
+}
+
+
+/*Management Service*/
+.management-user-data {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.management-user-data-col {
+    width: 50%;
+}
+
+.management-qr-code img {
+    padding: 0 50px;
+    height: 200px;
+}
+
+/* user page */
+.user-page {
+    margin: 50px 0;
+}
+.user-page .qr-code {
+    height: 200px;
+    padding: 0 50px;
+}
+
+/* Verify Page */
+
+.verify-page {
+    margin: 50px 0;
+}
+.verify-page .verify-form {
+    width: 50%;
+}
